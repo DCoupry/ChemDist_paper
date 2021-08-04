@@ -164,9 +164,8 @@ Finally, a critical property of the embedding is its ability to be used in conju
 \section{Conclusions}\label{conclusions}
 We have shown that using the triplet margin loss jointly with molecular graph based deep neural networks trains latent representations that satisfy the many definitions of chemical similarity. A naive example of such an embedding was trained with no hyperparameters optimization on a dataset constructed from public molecules and some basic concepts of graph similarity. This naive example compares acceptably out of the box with the accepted standard of circular fingerprints Tanimoto scores, while possessing many additional properties such as being derivable or retrainable. We believe such properties may be of great use to train reconstruction based molecular generators. 
 
-All code and data is available on github.com and is sufficient to reproduce our conclusions and graphs.
-
-The authors were both employed by GlaxoSmithKline UK at the time of the present work.
+\section{Data and Software availability}
+All code and data is available on \href{https://github.com/DCoupry/ChemDist\_paper}{https://github.com/DCoupry/ChemDist\_paper} under an Apache 2 license (GlaxoSmithKline copyright) and is sufficient to reproduce our conclusions and graphs. The actual results are also made available as supplementary information in the csv format.
 
 \begin{acknowledgement}
 
@@ -179,7 +178,7 @@ The authors thanks Darren Green and Kim Branson for their preliminary review; as
 The following files are available free of charge.
 \begin{itemize}
   \item lightning\_logs.zip: a compressed file containing the detailed training logs of the example model presented in this work. Visualize using the tensorboard utility, as described here: \href{https://pytorch-lightning.readthedocs.io/en/stable/starter/introduction_guide.html}{pytorch-lightning.readthedocs.io}
-  \item model_trained.zip: the weights and hyperparameters checkpoint of the example model presented in this work. Should be used in conjunction with the code released on github.
+  \item model\_trained.zip: the weights and hyperparameters checkpoint of the example model presented in this work. Should be used in conjunction with the code released on github.
 \end{itemize}
 
 \end{suppinfo}
