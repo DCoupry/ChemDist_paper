@@ -49,7 +49,7 @@
 
 %%% Load packages
 %\usepackage{amsthm,amsmath}
-%\RequirePackage{natbib}
+\RequirePackage{natbib}
 %\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc} %unicode support
@@ -318,6 +318,39 @@ We have shown that using the triplet margin loss jointly with molecular graph ba
 \begin{backmatter}
 
 
+\section*{Declarations}
+\section*{Availability of data and materials}
+All code and data is available on \href{https://github.com/DCoupry/ChemDist_paper}{https://github.com/DCoupry/ChemDist\_paper} under an Apache 2 license (GlaxoSmithKline copyright) and is sufficient to reproduce our conclusions and graphs.
+
+\section*{Acknowledgements}
+
+The authors thanks Darren Green and Kim Branson for their preliminary review; as well as the entire Molecular Design team for their constructive feedback.
+
+\section*{Funding}
+Not Applicable
+
+\section*{Competing interests}
+The authors declare that they have no competing interests.
+
+\section*{Authors' Contributions}
+PP generated all datasets and wrote the paper, DC performed the ML study, the analysis and wrote the paper. All authors read and approved the final manuscript.
+
+\section*{Abbreviations}
+\begin{itemize}
+    \item QSAR  : Quantitative Structure Activity Relationship
+    \item GNN : Graph Neural Network
+    \item MPNN : Message Passing Neural Network
+    \item RG : Reduced Graph
+    \item DF : Detailed Frame
+    \item GF : Bemis Murcko Graph
+    \item ECFP :  Extended Connectivity Fingerprint
+\end{itemize}
+
+
+\bibliographystyle{spbasic}
+\bibliography{chemdist}
+
+
 \section*{Figures}
 
 \begin{figure}[h!]
@@ -360,36 +393,6 @@ We have shown that using the triplet margin loss jointly with molecular graph ba
 \caption{Effect of random element deletion on embedding distance. No comparison with ECFP4 could be obtained due to the overwhelming rate of invalidity of the resulting structures.}
 \label{fig:Ablations}
 \end{figure}
-\section{Declarations}
-\subsection*{Availability of data and materials}
-All code and data is available on \href{https://github.com/DCoupry/ChemDist_paper}{https://github.com/DCoupry/ChemDist\_paper} under an Apache 2 license (GlaxoSmithKline copyright) and is sufficient to reproduce our conclusions and graphs.
 
-\subsection*{Acknowledgements}
-
-The authors thanks Darren Green and Kim Branson for their preliminary review; as well as the entire Molecular Design team for their constructive feedback.
-
-\subsection{Funding}
-Not Applicable
-
-\subsection*{Competing interests}
-The authors declare that they have no competing interests.
-
-\subsection{Authors' Contributions}
-PP generated all datasets and wrote the paper, DC performed the ML study, the analysis and wrote the paper. All authors read and approved the final manuscript.
-
-\section*{Abbreviations}
-\begin{itemize}
-    \item QSAR  : Quantitative Structure Activity Relationship
-    \item GNN : Graph Neural Network
-    \item MPNN : Message Passing Neural Network
-    \item RG : Reduced Graph
-    \item DF : Detailed Frame
-    \item GF : Bemis Murcko Graph
-    \item ECFP :  Extended Connectivity Fingerprint
-\end{itemize}
-
-
-\bibliographystyle{bmc-mathphys}
-\bibliography{chemdist}
 \end{backmatter}
 \end{document}
